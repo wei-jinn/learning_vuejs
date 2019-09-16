@@ -20,7 +20,6 @@
                 eventBus.changeAge(this.age);
             }
         }
-
     }
 </script>
 
