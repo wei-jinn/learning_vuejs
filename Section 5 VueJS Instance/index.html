@@ -1,0 +1,44 @@
+<body>
+<script src="vue.js"></script>
+
+<div id="app">
+
+    <h1 ref="heading">{{ title }}</h1>
+    <button v-on:click="show" ref="title">Show Paragraph</button>
+    <p v-if="showParagraph">This is not always visible</p>
+    <p>{{welcome()}}</p>
+  <test></test>
+
+
+</div>
+
+<div id="app2">
+
+    <button @click="chgTitle">Change title for app1</button>
+    <hr>
+    <p>Calling vm1.welcome() method in vm2: {{welcomeAgain()}}</p>
+    <br><br>
+
+  Try component here:
+  <test></test>
+  <test></test>
+  <test></test>
+  <test></test>
+
+
+</div>
+
+
+<div id="app5_71">
+
+  What should be written here?
+</div>
+
+
+<hr>
+
+
+<!--Try again vue component here: <test></test>-->
+
+<script src="app.js"></script>
+</body>
