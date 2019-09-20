@@ -31,7 +31,6 @@
             switched(isOn){
                 this.$emit('input',isOn)
             }
-
         }
     }
 </script>
