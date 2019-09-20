@@ -38,7 +38,7 @@
                 return value.toUpperCase();
             },
             addWord(value){
-                return value + " I AM YOUR FRIEND"
+                return value + " I AM YOUR GOOD Friend"
             },
             multipleTwo(value){
                 return value * 2;
