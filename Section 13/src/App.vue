@@ -11,6 +11,7 @@
                 <input v-model="newFruit">
                 <hr>
                 <input v-model="inputFilterText">
+
                 <ul>
                     <li v-for="fruit in filteredFruits">{{fruit}}</li>
 
