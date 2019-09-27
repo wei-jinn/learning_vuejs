@@ -5,13 +5,12 @@
 
         <p>User loaded has ID: {{$route.params.identity}}</p>
 
-<!--        <router-link tag="button" :to="'/user/' + $route.params.identity + '/edit'" >Edit User</router-link>-->
+        <router-link tag="button" :to="'/user/' + $route.params.identity + '/edit'" >Edit User</router-link>
 
         <router-link
                 tag="button"
                 :to="{name:'userEdit', params:{id:$route.params.identity},
                    query:{ locale:'en', q:100}}" >Edit User</router-link>
-
 
     </div>
 

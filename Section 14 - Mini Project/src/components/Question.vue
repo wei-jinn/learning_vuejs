@@ -67,7 +67,6 @@
                 this.btnData[2].correct = false;
                 this.btnData[3].answer = this.generateRandomNumber(correctAnswer - 10, correctAnswer + 10, correctAnswer);
                 this.btnData[3].correct = false;
-
                 const correctButton = this.generateRandomNumber(0, 3);
                 this.btnData[correctButton].correct = true;
                 this.btnData[correctButton].answer = correctAnswer;

@@ -3,7 +3,8 @@ export const fruitMixin = {
         return{
             fruits:['Apple' ,'Banana', 'Mango', 'Melon'],
             inputFilterText:'',
-            number: 0
+            number: 0,
+            mixinID: 'fruit'
         }
     },
 
@@ -16,5 +17,13 @@ export const fruitMixin = {
     },
     created(){
         console.log('fruitMixin is created');
+    },
+    methods:{
+        displayID:function(){
+            return "Your Mixin ID is " + this.mixinID;
+        },
+        displayText:function(){
+            return "Your text is " + this.text;
+        }
     }
 };

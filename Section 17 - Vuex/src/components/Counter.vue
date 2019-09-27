@@ -1,19 +1,22 @@
 <template>
     <div>
+        <p>Buttons from FirstCounter</p>
         <button class="btn btn-primary" @click="increment">Increment</button>
         <button class="btn btn-primary" @click="decrement">Decrement</button>
     </div>
 </template>
 
 <script>
+    import {mapMutations} from 'vuex';
     export default {
+
+
         methods: {
-            increment() {
-                this.$emit('updated', 1);
-            },
-            decrement() {
-                this.$emit('updated', -1);
-            }
+            ...mapMutations([
+                'increment',
+                'decrement'
+            ]),
+
         }
     }
 </script>

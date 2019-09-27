@@ -6,9 +6,12 @@
                 <p>{{text | toUppercase }}</p>
                 <p>{{text | addWord | to-lowercase}}</p>
                 <p>The number is {{number | multipleTwo}} </p>
+
                 <hr>
+
                 <button @click="fruits.push(newFruit)">Add New Item</button>
                 <input v-model="newFruit">
+
                 <hr>
                 <input v-model="inputFilterText">
 
@@ -18,6 +21,14 @@
                 </ul>
                 <hr>
                 <app-list></app-list>
+
+                <hr>
+
+                <p>{{mixinID | addWord | toUpperCase}}</p>
+                <p>{{displayID()}}</p>
+                <p>{{displayText()}}</p>
+
+                <button class="btn btn-primary" @click="displayID()">Click to display</button>
             </div>
         </div>
     </div>
