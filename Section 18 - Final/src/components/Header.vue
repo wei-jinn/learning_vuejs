@@ -31,6 +31,7 @@
                         </ul>
 
                 </ul>
+                <p>{{isDropdownOpen}}</p>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
@@ -39,10 +40,11 @@
 <script>
     import {mapActions} from 'vuex';
     //
+
     export default {
         data() {
             return {
-                isDropdownOpen: false
+                isDropdownOpen: true
             }
         },
         computed: {
